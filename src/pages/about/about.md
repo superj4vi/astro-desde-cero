@@ -1,6 +1,6 @@
 ---
-layout: '../../layout/Base.astro';
-title: 'Javier Aragon';
+layout: '../../layout/Base.astro'
+title: 'Javier Aragon'
 ---
 
 Hola mi nombre es Javier Aragon,soy estudiante de la Carrera de Ingenieria en Computacion en la Universidad Tecnologica de Honduras,
