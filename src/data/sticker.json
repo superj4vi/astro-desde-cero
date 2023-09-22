@@ -1,0 +1,27 @@
+[
+  {
+    "name":"Pirate",
+    "url": "https://manz.dev/assets/stickers/pirate.png",
+    "category":"Movie"
+  },
+  {
+    "name":"Manztrix",
+    "url": "https://manz.dev/assets/stickers/manztrix.gif",
+    "category":"Movie"
+  },
+  {
+    "name":"Captain-America",
+    "url": "https://manz.dev/assets/stickers/captain-america.png",
+    "category":"Comics"
+  },
+  {
+    "name":"Darth-Vader",
+    "url": "https://manz.dev/assets/stickers/darth-vader.gif",
+    "category":"Starwars"
+  },
+  {
+    "name":"Spiderman",
+    "url": "https://manz.dev/assets/stickers/spiderman.gif",
+    "category":"SuperHero"
+  }
+]

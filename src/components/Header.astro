@@ -1,0 +1,52 @@
+---
+import acerca from '../pages/about/acerca.astro'
+---
+<div class="container">
+  <div class="container__image">
+    <img class="container__logo" src="https://static-cdn.jtvnw.net/jtv_user_pictures/c3f57358-f09b-482a-bf17-0fa331ae7f2e-profile_image-300x300.png" alt="Mi Logo" srcset="">
+  </div>
+  <nav class="nav__container">
+    <a href="/" class="nav__container--item">INICIO</a>
+    <a href="/about/acerca" class="nav__container--item">SOBRE MI</a>
+    <a href="#" class="nav__container--item">PORTAFOLIO</a>
+    <a href="/blog/post" class="nav__container--item">BLOG</a>
+    <a href="#" class="nav__container--item">CONTACTO</a>
+  </nav>
+</div>
+<style lang="scss">
+  .container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #010C1A;
+  }
+  .container__image{
+    width: 50%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    & .container__logo{
+      width: 70px;
+      height: 70px;
+      background-size: contain;
+      border-radius: 50%;
+
+    }
+  }
+  .nav__container {
+    width: 50%;
+    height: 40px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    .nav__container--item{
+      text-decoration: none;
+      color:#fff;
+
+    }
+
+  }
+</style>

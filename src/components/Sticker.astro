@@ -1,0 +1,40 @@
+---
+// import sticker from '../data/sticker.json'
+const {data} = Astro.props
+---
+
+<div class="sticker__container">
+  <h3 class="name">{data.name}</h3>
+  <img class="sticker" src={data.url} alt={data.name}>
+  <span class="category">{data.category}</span>
+</div>
+
+<style lang="scss">
+.sticker__container{
+  background: #111;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+  border: 2px solid gold;
+
+  & .name{
+    color: #fff;
+  }
+  & .sticker{
+    --size: 150px;
+    width:  var(--size);
+    height: var(--size) ;
+    image-rendering: pixelated;
+    }
+  & .category{
+    background-color: darkred;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    }
+ }
+</style>

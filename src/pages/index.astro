@@ -1,0 +1,43 @@
+---
+import Base from '../layout/Base.astro';
+import Sticker from "../components/Sticker.astro"
+import sticker from '../data/sticker.json'
+
+const {frontmatter}=Astro.props
+---
+
+<style>
+  *{
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .sticker-colletion{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  </style>
+
+<script>
+  // Importa módulos npm.
+  import confetti from 'canvas-confetti';
+  // Encuentra nuestro componente en la página.
+  const button = document.querySelector('[data-confetti-button]');
+  // Agrega event listeners para disparar confetti cuando un botón es clickeado.
+  button.addEventListener('click', () => confetti());
+
+
+</script>
+
+
+<Base title="Pagina Principal">
+<h1>
+{frontmatter</h1>
+
+  <button data-confetti-button>Celebrate!!</button>
+  <div class="sticker-colletion">
+    {sticker.map(sticker=><Sticker data={sticker}></Sticker>)}
+  </div>
+
+}
+</Base>
