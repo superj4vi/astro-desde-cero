@@ -9,8 +9,8 @@ export default defineConfig({
 const IsGithubPages = true
 const path = require('path')
 const folderName = path.basename(process.cwd() + "/")
-const mode = process.env.Node_ENV === "production" ? "producctio" : "development"
-const base = mode === "producctio" && IsGithubPages ? "/" + folderName : "/"
+const mode = process.env.NODE_ENV === "production" ? "production" : "development"
+const base = mode === "production" && IsGithubPages ? "/" + folderName : "/"
 
 module.exports = {
   root: "src",
